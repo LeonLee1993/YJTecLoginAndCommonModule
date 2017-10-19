@@ -1,0 +1,618 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		851EA16D1F90630700350ABD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 851EA16C1F90630700350ABD /* AppDelegate.m */; };
+		851EA1701F90630700350ABD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 851EA16F1F90630700350ABD /* ViewController.m */; };
+		851EA1731F90630700350ABD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 851EA1711F90630700350ABD /* Main.storyboard */; };
+		851EA1751F90630700350ABD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 851EA1741F90630700350ABD /* Assets.xcassets */; };
+		851EA1781F90630700350ABD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 851EA1761F90630700350ABD /* LaunchScreen.storyboard */; };
+		851EA17B1F90630700350ABD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 851EA17A1F90630700350ABD /* main.m */; };
+		857EC28D1F984B8D0003E45F /* YJTecCommonModuleFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 857EC28B1F984B840003E45F /* YJTecCommonModuleFramework.framework */; };
+		857EC28E1F984B8D0003E45F /* YJTecCommonModuleFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 857EC28B1F984B840003E45F /* YJTecCommonModuleFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		857EC28F1F984B940003E45F /* YJTecCommonModuleFramework.framework in Resources */ = {isa = PBXBuildFile; fileRef = 857EC28B1F984B840003E45F /* YJTecCommonModuleFramework.framework */; };
+		85D08DD21F90AC8A00BF36CC /* libPods-YJTecLoginModule.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 52CA94D7608573437EDB5E37 /* libPods-YJTecLoginModule.a */; };
+		85F81A661F960A3D00059733 /* https.cer in Resources */ = {isa = PBXBuildFile; fileRef = 85F81A651F960A3D00059733 /* https.cer */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		85AAF6BA1F92157100B5594B /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				857EC28E1F984B8D0003E45F /* YJTecCommonModuleFramework.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		52CA94D7608573437EDB5E37 /* libPods-YJTecLoginModule.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YJTecLoginModule.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5FD4A69C0A304B5832ADFF6E /* Pods-YJTecLoginModule.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YJTecLoginModule.release.xcconfig"; path = "Pods/Target Support Files/Pods-YJTecLoginModule/Pods-YJTecLoginModule.release.xcconfig"; sourceTree = "<group>"; };
+		72BF8C7B9BF5C8C09BE3BCB7 /* Pods-YJTecLoginModule.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YJTecLoginModule.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YJTecLoginModule/Pods-YJTecLoginModule.debug.xcconfig"; sourceTree = "<group>"; };
+		851EA1681F90630700350ABD /* YJTecLoginModule.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YJTecLoginModule.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		851EA16B1F90630700350ABD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		851EA16C1F90630700350ABD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		851EA16E1F90630700350ABD /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		851EA16F1F90630700350ABD /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		851EA1721F90630700350ABD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		851EA1741F90630700350ABD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		851EA1771F90630700350ABD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		851EA1791F90630700350ABD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		851EA17A1F90630700350ABD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		857EC28B1F984B840003E45F /* YJTecCommonModuleFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = YJTecCommonModuleFramework.framework; sourceTree = "<group>"; };
+		85F81A651F960A3D00059733 /* https.cer */ = {isa = PBXFileReference; lastKnownFileType = file; path = https.cer; sourceTree = "<group>"; };
+		85F81A671F960B1500059733 /* LoginModuleHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginModuleHeader.pch; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		851EA1651F90630700350ABD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				857EC28D1F984B8D0003E45F /* YJTecCommonModuleFramework.framework in Frameworks */,
+				85D08DD21F90AC8A00BF36CC /* libPods-YJTecLoginModule.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		39C2E56211F7EAEFF7B544C6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				72BF8C7B9BF5C8C09BE3BCB7 /* Pods-YJTecLoginModule.debug.xcconfig */,
+				5FD4A69C0A304B5832ADFF6E /* Pods-YJTecLoginModule.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		851EA15F1F90630700350ABD = {
+			isa = PBXGroup;
+			children = (
+				857EC28B1F984B840003E45F /* YJTecCommonModuleFramework.framework */,
+				851EA16A1F90630700350ABD /* YJTecLoginModule */,
+				851EA1691F90630700350ABD /* Products */,
+				39C2E56211F7EAEFF7B544C6 /* Pods */,
+				E39FF6C0514CBA2F701DE501 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		851EA1691F90630700350ABD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				851EA1681F90630700350ABD /* YJTecLoginModule.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		851EA16A1F90630700350ABD /* YJTecLoginModule */ = {
+			isa = PBXGroup;
+			children = (
+				85F81A671F960B1500059733 /* LoginModuleHeader.pch */,
+				85F81A651F960A3D00059733 /* https.cer */,
+				851EA16B1F90630700350ABD /* AppDelegate.h */,
+				851EA16C1F90630700350ABD /* AppDelegate.m */,
+				851EA16E1F90630700350ABD /* ViewController.h */,
+				851EA16F1F90630700350ABD /* ViewController.m */,
+				851EA1711F90630700350ABD /* Main.storyboard */,
+				851EA1741F90630700350ABD /* Assets.xcassets */,
+				851EA1761F90630700350ABD /* LaunchScreen.storyboard */,
+				851EA1791F90630700350ABD /* Info.plist */,
+				851EA17A1F90630700350ABD /* main.m */,
+			);
+			path = YJTecLoginModule;
+			sourceTree = "<group>";
+		};
+		E39FF6C0514CBA2F701DE501 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				52CA94D7608573437EDB5E37 /* libPods-YJTecLoginModule.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		851EA1671F90630700350ABD /* YJTecLoginModule */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 851EA17E1F90630700350ABD /* Build configuration list for PBXNativeTarget "YJTecLoginModule" */;
+			buildPhases = (
+				B599ABADCC787B8D2244AFAA /* [CP] Check Pods Manifest.lock */,
+				851EA1641F90630700350ABD /* Sources */,
+				851EA1651F90630700350ABD /* Frameworks */,
+				851EA1661F90630700350ABD /* Resources */,
+				B3E3669C642B10593BABD271 /* [CP] Embed Pods Frameworks */,
+				BF94AAF3FAEA6BC2AF63ABAB /* [CP] Copy Pods Resources */,
+				85AAF6BA1F92157100B5594B /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YJTecLoginModule;
+			productName = YJTecLoginModule;
+			productReference = 851EA1681F90630700350ABD /* YJTecLoginModule.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		851EA1601F90630700350ABD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = YJGX;
+				TargetAttributes = {
+					851EA1671F90630700350ABD = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 851EA1631F90630700350ABD /* Build configuration list for PBXProject "YJTecLoginModule" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 851EA15F1F90630700350ABD;
+			productRefGroup = 851EA1691F90630700350ABD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				851EA1671F90630700350ABD /* YJTecLoginModule */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		851EA1661F90630700350ABD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				857EC28F1F984B940003E45F /* YJTecCommonModuleFramework.framework in Resources */,
+				851EA1781F90630700350ABD /* LaunchScreen.storyboard in Resources */,
+				85F81A661F960A3D00059733 /* https.cer in Resources */,
+				851EA1751F90630700350ABD /* Assets.xcassets in Resources */,
+				851EA1731F90630700350ABD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B3E3669C642B10593BABD271 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YJTecLoginModule/Pods-YJTecLoginModule-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B599ABADCC787B8D2244AFAA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-YJTecLoginModule-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BF94AAF3FAEA6BC2AF63ABAB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-YJTecLoginModule/Pods-YJTecLoginModule-resources.sh",
+				"${PODS_ROOT}/BaiduMapKit/BaiduMapKit/BaiduMapAPI_Map.framework/Resources/mapapi.bundle",
+				"${PODS_ROOT}/IQKeyboardManager/IQKeyboardManager/Resources/IQKeyboardManager.bundle",
+				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
+				"${PODS_ROOT}/UMengUShare/UShareSDK/UMSocialSDK/UMSocialSDKPromptResources.bundle",
+				"${PODS_ROOT}/UMengUShare/UShareSDK/UMSocialUI/UMSocialSDKResources.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YJTecLoginModule/Pods-YJTecLoginModule-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		851EA1641F90630700350ABD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				851EA1701F90630700350ABD /* ViewController.m in Sources */,
+				851EA17B1F90630700350ABD /* main.m in Sources */,
+				851EA16D1F90630700350ABD /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		851EA1711F90630700350ABD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				851EA1721F90630700350ABD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		851EA1761F90630700350ABD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				851EA1771F90630700350ABD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		851EA17C1F90630700350ABD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"$(OTHER_LDFLAGS)",
+				);
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		851EA17D1F90630700350ABD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"$(OTHER_LDFLAGS)",
+				);
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		851EA17F1F90630700350ABD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 72BF8C7B9BF5C8C09BE3BCB7 /* Pods-YJTecLoginModule.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W7P3U25822;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/YJTecLoginModule",
+					"$(PROJECT_DIR)",
+				);
+				GCC_PREFIX_HEADER = "$(SRCROOT)/YJTecLoginModule/LoginModuleHeader.pch";
+				INFOPLIST_FILE = YJTecLoginModule/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-l\"AFNetworking\"",
+					"-l\"IQKeyboardManager\"",
+					"-l\"MBProgressHUD\"",
+					"-l\"MJRefresh\"",
+					"-l\"Masonry\"",
+					"-l\"ReactiveObjC\"",
+					"-l\"SDWebImage\"",
+					"-l\"SignalR-ObjC\"",
+					"-l\"SocialQQ\"",
+					"-l\"SocialSina\"",
+					"-l\"SocialWeChat\"",
+					"-l\"SocketRocket\"",
+					"-l\"UMSocialLog\"",
+					"-l\"YYModel\"",
+					"-l\"c++\"",
+					"-l\"crypto\"",
+					"-l\"icucore\"",
+					"-l\"pop\"",
+					"-l\"sqlite3\"",
+					"-l\"sqlite3.0\"",
+					"-l\"ssl\"",
+					"-l\"z\"",
+					"-framework",
+					"\"BaiduMapAPI_Base\"",
+					"-framework",
+					"\"BaiduMapAPI_Cloud\"",
+					"-framework",
+					"\"BaiduMapAPI_Location\"",
+					"-framework",
+					"\"BaiduMapAPI_Map\"",
+					"-framework",
+					"\"BaiduMapAPI_Radar\"",
+					"-framework",
+					"\"BaiduMapAPI_Search\"",
+					"-framework",
+					"\"BaiduMapAPI_Utils\"",
+					"-framework",
+					"\"CFNetwork\"",
+					"-framework",
+					"\"CoreFoundation\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"CoreLocation\"",
+					"-framework",
+					"\"CoreTelephony\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"ImageIO\"",
+					"-framework",
+					"\"MobileCoreServices\"",
+					"-framework",
+					"\"OpenGLES\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-framework",
+					"\"UIKit\"",
+					"-framework",
+					"\"UMMobClick\"",
+					"-framework",
+					"\"UMSocialCore\"",
+					"-framework",
+					"\"UMSocialNetwork\"",
+					"-framework",
+					"\"UShareUI\"",
+					"-ObjC",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = YJ.YJTecLoginModule;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		851EA1801F90630700350ABD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5FD4A69C0A304B5832ADFF6E /* Pods-YJTecLoginModule.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W7P3U25822;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/YJTecLoginModule",
+					"$(PROJECT_DIR)",
+				);
+				GCC_PREFIX_HEADER = "$(SRCROOT)/YJTecLoginModule/LoginModuleHeader.pch";
+				INFOPLIST_FILE = YJTecLoginModule/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-l\"AFNetworking\"",
+					"-l\"IQKeyboardManager\"",
+					"-l\"MBProgressHUD\"",
+					"-l\"MJRefresh\"",
+					"-l\"Masonry\"",
+					"-l\"ReactiveObjC\"",
+					"-l\"SDWebImage\"",
+					"-l\"SignalR-ObjC\"",
+					"-l\"SocialQQ\"",
+					"-l\"SocialSina\"",
+					"-l\"SocialWeChat\"",
+					"-l\"SocketRocket\"",
+					"-l\"UMSocialLog\"",
+					"-l\"YYModel\"",
+					"-l\"c++\"",
+					"-l\"crypto\"",
+					"-l\"icucore\"",
+					"-l\"pop\"",
+					"-l\"sqlite3\"",
+					"-l\"sqlite3.0\"",
+					"-l\"ssl\"",
+					"-l\"z\"",
+					"-framework",
+					"\"BaiduMapAPI_Base\"",
+					"-framework",
+					"\"BaiduMapAPI_Cloud\"",
+					"-framework",
+					"\"BaiduMapAPI_Location\"",
+					"-framework",
+					"\"BaiduMapAPI_Map\"",
+					"-framework",
+					"\"BaiduMapAPI_Radar\"",
+					"-framework",
+					"\"BaiduMapAPI_Search\"",
+					"-framework",
+					"\"BaiduMapAPI_Utils\"",
+					"-framework",
+					"\"CFNetwork\"",
+					"-framework",
+					"\"CoreFoundation\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"CoreLocation\"",
+					"-framework",
+					"\"CoreTelephony\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"ImageIO\"",
+					"-framework",
+					"\"MobileCoreServices\"",
+					"-framework",
+					"\"OpenGLES\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-framework",
+					"\"UIKit\"",
+					"-framework",
+					"\"UMMobClick\"",
+					"-framework",
+					"\"UMSocialCore\"",
+					"-framework",
+					"\"UMSocialNetwork\"",
+					"-framework",
+					"\"UShareUI\"",
+					"-ObjC",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = YJ.YJTecLoginModule;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		851EA1631F90630700350ABD /* Build configuration list for PBXProject "YJTecLoginModule" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				851EA17C1F90630700350ABD /* Debug */,
+				851EA17D1F90630700350ABD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		851EA17E1F90630700350ABD /* Build configuration list for PBXNativeTarget "YJTecLoginModule" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				851EA17F1F90630700350ABD /* Debug */,
+				851EA1801F90630700350ABD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 851EA1601F90630700350ABD /* Project object */;
+}

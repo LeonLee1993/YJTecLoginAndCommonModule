@@ -1,0 +1,6 @@
+framework module YJTecCommonModuleFramework {
+  umbrella header "YJTecCommonModuleFramework.h"
+
+  export *
+  module * { export * }
+}
